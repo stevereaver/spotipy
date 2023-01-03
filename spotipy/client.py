@@ -510,7 +510,7 @@ class Spotify(object):
 
         trid = self._get_id("show", show_id)
         return self._get(
-            "shows/" + trid + "/episodes/", limit=limit, offset=offset, market=market
+            "shows/" + trid + "/episodes", limit=limit, offset=offset, market=market
         )
 
     def episode(self, episode_id, market=None):
